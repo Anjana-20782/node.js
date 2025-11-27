@@ -21,4 +21,5 @@ http.createServer((req, res) => {
   res.write('Part 1\n');   // send chunk 1
   res.write('Part 2\n');   // send chunk 2
 
- 
+  res.end('Final part\n'); // send final chunk and close
+}).listen(3001);
