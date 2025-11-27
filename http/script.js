@@ -19,4 +19,6 @@ http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
 
   res.write('Part 1\n');   // send chunk 1
+  res.write('Part 2\n');   // send chunk 2
+
  
