@@ -25,4 +25,14 @@
 // }).listen(3001);
 
 
+const http = require('http');
+const fs   = require('fs');
+const path = require('path');
 
+const PORT = 3000;
+
+const server = http.createServer((req, res) => {
+  // Build path to index.html (in the same folder)
+  const filePath = path.join(__dirname, 'index.html');
+
+  
