@@ -1,23 +1,22 @@
 
 const fs=require("fs")
 
-//create a file
 
- fs.writeFileSync("note.txt","Hello Node.js",(err)=>{
-    if(err){
-        console.log(err)
+//  fs.writeFileSync("note.txt","Hello Node.js",(err)=>{
+//     if(err){
+//         console.log(err)
 
-    }
-    console.log("created")
- })
+//     }
+//     console.log("created")
+//  })
 
  
-// fs.writeFile("notes.txt","Hello Node.js",(err)=>{
-//     if(err)
-//     {
-//         console.log("error writing file",err);
+fs.writeFile("notes.txt","Hello Node.js",(err)=>{
+    if(err)
+    {
+        console.log("error writing file",err);
         
-//     }
-//     console.log("File created using WritingFile");
+    }
+    console.log("File created using WritingFile");
     
-// })
+})
