@@ -12,5 +12,5 @@ fs.writeFile('data.json', jsonData, (err) => {
     console.error('Error writing file:', err);
     return;
   }
-
+  console.log('Array successfully written to data.json');
 });
