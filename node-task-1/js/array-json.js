@@ -8,4 +8,9 @@ const jsonData = JSON.stringify(arr, null, 2);
 
 // Write to data.json
 fs.writeFile('data.json', jsonData, (err) => {
- 
+  if (err) {
+    console.error('Error writing file:', err);
+    return;
+  }
+
+});
