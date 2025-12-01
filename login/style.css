@@ -17,9 +17,29 @@ input{
     padding:5px;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between buttons */
+}
+
 button{
     padding:7px 12px;
-    margin-top:8px;
+    margin-top:15px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.b1{
+    background-color: green;
+    color: white;
+}
+
+.b2{
+    background-color: red;
+    color: white;
 }
 
 h2{
