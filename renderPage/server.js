@@ -9,11 +9,11 @@ const server = http.createServer((req, res) => {
 
 
   if (url.endsWith(".css") || url.endsWith(".js")) {
-    const assetPath = path.join(__dirname, "public", url);
-    const ext = path.extname(url);
+   const fileName = path.basename(url); // home.css
+    const assetPath = path.join(__dirname, "public", fileName);
 
-    const contentType =
-      ext === ".css" ? "text/css" : "application/javascript";
+    const ext = path.extname(url);
+    const contentType = ext === ".css" ? "text/css" : "application/javascript";
 
     fs.readFile(assetPath, (err, data) => {
       if (err) {
