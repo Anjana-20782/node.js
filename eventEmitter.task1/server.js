@@ -14,7 +14,7 @@ function startCountdown() {
         // small delay to show separation, optional
         setTimeout(() => emitter.emit('launch:ready'), 200);
       }
-    }, i * 1000); // 0ms, 1000ms, 2000ms
+    },i * 1000); // 0ms, 1000ms, 2000ms
   });
 }
 
