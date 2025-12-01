@@ -14,7 +14,10 @@ body{
 input{
     width:90%;
     margin:5px 0;
-    padding:5px;
+    padding:9px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid grey;
 }
 
 .btn-container{
