@@ -1,6 +1,6 @@
 const EventEmitter = require("events");
 
-const notificationBus = new EventEmitter();//instance cheya
+const notificationBus = new EventEmitter();// create instance of eventemitter
 
 notificationBus.on("newNotification", (data) => {
   console.log("New notification received:", data.message);
